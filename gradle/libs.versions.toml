@@ -1,0 +1,22 @@
+[versions]
+
+# Plugins
+androidGradlePlugin = "8.1.2"
+kotlin = "1.9.10"
+
+[libraries]
+androidx-activityCompose = { module = "androidx.activity:activity-compose", version = "1.8.0" }
+
+compose-bom = { module = "androidx.compose:compose-bom", version = "2023.10.01" }
+compose-ui = { module = "androidx.compose.ui:ui" }
+compose-uiTooling = { module = "androidx.compose.ui:ui-tooling" }
+compose-uiPreview = { module = "androidx.compose.ui:ui-tooling-preview" }
+material3 = { module = "androidx.compose.material3:material3" }
+
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version = "5.10.0" }
+
+[plugins]
+android-app = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
+[bundles]
