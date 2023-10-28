@@ -12,10 +12,16 @@ app:
   - VARIANT: ""
     opts:
       is_expand: false
+  - GRADLEW_PATH: ./gradlew
+    opts:
+      is_expand: false
 meta:
   bitrise.io:
     machine_type_id: standard
     stack: linux-docker-android-20.04
+trigger_map:
+- pull_request_target_branch: '*'
+  workflow: run_unit_tests
 workflows:
   run_unit_tests:
     summary: Run your Android unit tests and create an APK file to install your app
@@ -30,4 +36,6 @@ workflows:
         inputs:
         - set_java_version: "17"
     - gradle-unit-test@1: {}
-    - danger@2: {}
+    - danger@2:
+        inputs:
+          - github_api_token: $DANGER_GITHUB_API_TOKEN
