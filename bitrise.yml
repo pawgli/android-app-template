@@ -36,6 +36,3 @@ workflows:
         inputs:
         - set_java_version: "17"
     - gradle-unit-test@1: {}
-    - danger@2:
-        inputs:
-          - github_api_token: $DANGER_GITHUB_API_TOKEN
