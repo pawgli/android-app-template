@@ -1,3 +1,5 @@
+@file:Suppress("MagicNumber")
+
 package io.github.pawgli.daggercomposelibrary.ui.theme
 
 import androidx.compose.ui.graphics.Color
