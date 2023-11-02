@@ -4,7 +4,7 @@
 java = "17"
 androidGradlePlugin = "8.1.2"
 kotlin = "1.9.10"
-detekt = "1.23.1"
+detekt = "1.23.3"
 
 [libraries]
 androidx-activityCompose = { module = "androidx.activity:activity-compose", version = "1.8.0" }
