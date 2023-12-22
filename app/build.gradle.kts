@@ -1,16 +1,13 @@
 plugins {
-  alias(libs.plugins.android.app)
-  alias(libs.plugins.kotlin.android)
+  id("AndroidAppConventionPlugin")
+  id("AndroidAppComposeConventionPlugin")
 }
 
 android {
   namespace = "io.github.pawgli.daggercomposelibrary"
-  compileSdk = 34
 
   defaultConfig {
     applicationId = "io.github.pawgli.daggercomposelibrary"
-    minSdk = 30
-    targetSdk = 34
     versionCode = 1
     versionName = "1.0"
 
@@ -26,25 +23,10 @@ android {
       )
     }
   }
-  kotlin {
-    jvmToolchain(jdkVersion = 17)
-  }
-  buildFeatures {
-    compose = true
-  }
-  composeOptions {
-    kotlinCompilerExtensionVersion = "1.5.7"
-  }
 }
 
 dependencies {
   implementation(libs.androidx.activityCompose)
-
-  implementation(platform(libs.compose.bom))
-  implementation(libs.compose.ui)
-  implementation(libs.compose.uiPreview)
-  implementation(libs.material3)
-  debugImplementation(libs.compose.uiTooling)
 
   testImplementation(libs.bundles.testSuite)
 }
