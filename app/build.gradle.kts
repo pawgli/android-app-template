@@ -1,16 +1,12 @@
 plugins {
-  alias(libs.plugins.android.app)
-  alias(libs.plugins.kotlin.android)
+  id("convention.android.app")
 }
 
 android {
   namespace = "io.github.pawgli.daggercomposelibrary"
-  compileSdk = 34
 
   defaultConfig {
     applicationId = "io.github.pawgli.daggercomposelibrary"
-    minSdk = 30
-    targetSdk = 34
     versionCode = 1
     versionName = "1.0"
 
@@ -25,9 +21,6 @@ android {
         "proguard-rules.pro"
       )
     }
-  }
-  kotlin {
-    jvmToolchain(jdkVersion = 17)
   }
   buildFeatures {
     compose = true

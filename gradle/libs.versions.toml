@@ -20,6 +20,10 @@ kotest = { module = "io.kotest:kotest-assertions-core", version = "5.8.0" }
 
 detekt-formatting = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "detekt" }
 
+# Dependencies of the included build scripts
+android-gradle = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
+kotlin-gradle = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+
 [bundles]
 testSuite = ["junit-jupiter", "kotest"]
 
