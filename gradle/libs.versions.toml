@@ -3,6 +3,7 @@
 # Plugins
 java = "17"
 androidGradlePlugin = "8.2.0"
+composeCompiler = "1.5.7"
 kotlin = "1.9.21"
 detekt = "1.23.4"
 
@@ -13,7 +14,7 @@ compose-bom = { module = "androidx.compose:compose-bom", version = "2023.10.01" 
 compose-ui = { module = "androidx.compose.ui:ui" }
 compose-uiTooling = { module = "androidx.compose.ui:ui-tooling" }
 compose-uiPreview = { module = "androidx.compose.ui:ui-tooling-preview" }
-material3 = { module = "androidx.compose.material3:material3" }
+compose-material3 = { module = "androidx.compose.material3:material3" }
 
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version = "5.10.1" }
 kotest = { module = "io.kotest:kotest-assertions-core", version = "5.8.0" }

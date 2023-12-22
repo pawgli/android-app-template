@@ -1,5 +1,6 @@
 plugins {
-  id("convention.android.app")
+  id("AndroidAppConventionPlugin")
+  id("AndroidAppComposeConventionPlugin")
 }
 
 android {
@@ -22,22 +23,10 @@ android {
       )
     }
   }
-  buildFeatures {
-    compose = true
-  }
-  composeOptions {
-    kotlinCompilerExtensionVersion = "1.5.7"
-  }
 }
 
 dependencies {
   implementation(libs.androidx.activityCompose)
-
-  implementation(platform(libs.compose.bom))
-  implementation(libs.compose.ui)
-  implementation(libs.compose.uiPreview)
-  implementation(libs.material3)
-  debugImplementation(libs.compose.uiTooling)
 
   testImplementation(libs.bundles.testSuite)
 }

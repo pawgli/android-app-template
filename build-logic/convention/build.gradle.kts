@@ -13,9 +13,14 @@ dependencies {
 
 gradlePlugin {
   plugins {
-    register("AndroidAppConventionPlugin") {
-      id = "convention.android.app"
-      implementationClass = "AndroidAppConventionPlugin"
-    }
+    registerConvention("AndroidAppConventionPlugin")
+    registerConvention("AndroidAppComposeConventionPlugin")
+  }
+}
+
+fun NamedDomainObjectContainer<PluginDeclaration>.registerConvention(name: String) {
+  register(name) {
+    id = name
+    implementationClass = name
   }
 }
