@@ -2,12 +2,11 @@
 
 package io.github.pawgli.configuration
 
-import com.android.build.api.dsl.CommonExtension
+import com.android.build.api.dsl.ApplicationExtension
 import io.github.pawgli.ConventionDefaults
-import org.gradle.api.Project
 
-internal fun Project.configureSdkVersions(
-  extension: CommonExtension<*, *, *, *, *>,
+internal fun configureSdkVersions(
+  extension: ApplicationExtension,
   minSdk: Int = ConventionDefaults.MinSdk,
 ) {
   extension.apply {
