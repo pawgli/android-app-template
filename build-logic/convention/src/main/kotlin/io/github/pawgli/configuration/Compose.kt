@@ -1,13 +1,13 @@
 package io.github.pawgli.configuration
 
-import com.android.build.api.dsl.ApplicationExtension
+import com.android.build.api.dsl.CommonExtension
 import io.github.pawgli.utils.getAsString
 import io.github.pawgli.utils.libs
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.dependencies
 
 internal fun Project.configureCompose(
-  extension: ApplicationExtension,
+  extension: CommonExtension<*, *, *, *, *, *>,
 ) {
   extension.apply {
     buildFeatures {

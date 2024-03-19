@@ -1,25 +1,28 @@
-import com.android.build.api.dsl.ApplicationExtension
-import com.android.build.gradle.LibraryExtension
-import io.github.pawgli.ConventionDefaults
+import com.android.build.api.dsl.LibraryExtension
+import com.android.build.api.variant.LibraryAndroidComponentsExtension
 import io.github.pawgli.configuration.configureKotlin
 import io.github.pawgli.configuration.configureSdkVersions
 import io.github.pawgli.configuration.configureTest
+import io.github.pawgli.configuration.disableUnnecessaryAndroidTests
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
 
-class AndroidAppConventionPlugin : Plugin<Project> {
+class AndroidLibraryConventionPlugin : Plugin<Project> {
+
   override fun apply(target: Project) {
     with(target) {
       with(pluginManager) {
-        apply("com.android.application")
+        apply("com.android.library")
         apply("org.jetbrains.kotlin.android")
       }
 
       configureKotlin()
       configureTest()
-      configure<ApplicationExtension> {
-        defaultConfig.targetSdk = ConventionDefaults.TargetSdk
+      configure<LibraryAndroidComponentsExtension> {
+        disableUnnecessaryAndroidTests(extension = this)
+      }
+      configure<LibraryExtension> {
         configureSdkVersions(extension = this)
       }
     }
