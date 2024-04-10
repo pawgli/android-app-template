@@ -14,5 +14,5 @@ dependencyResolutionManagement {
   }
 }
 
-rootProject.name = "Dagger Compose Library"
+rootProject.name = "AndroidAppTemplate"
 include(":app")
