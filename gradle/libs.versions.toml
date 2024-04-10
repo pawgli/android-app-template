@@ -2,15 +2,15 @@
 
 # Plugins
 java = "17"
-androidGradlePlugin = "8.3.1"
+androidGradlePlugin = "8.3.2"
 composeCompiler = "1.5.10"
 kotlin = "1.9.22"
-detekt = "1.23.5"
+detekt = "1.23.6"
 
 [libraries]
 androidx-activityCompose = { module = "androidx.activity:activity-compose", version = "1.8.2" }
 
-compose-bom = { module = "androidx.compose:compose-bom", version = "2024.02.02" }
+compose-bom = { module = "androidx.compose:compose-bom", version = "2024.04.00" }
 compose-ui = { module = "androidx.compose.ui:ui" }
 compose-uiTooling = { module = "androidx.compose.ui:ui-tooling" }
 compose-uiPreview = { module = "androidx.compose.ui:ui-tooling-preview" }
