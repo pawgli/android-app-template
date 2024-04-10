@@ -4,10 +4,10 @@ plugins {
 }
 
 android {
-  namespace = "io.github.pawgli.daggercomposelibrary"
+  namespace = "io.github.pawgli.androidapptemplate"
 
   defaultConfig {
-    applicationId = "io.github.pawgli.daggercomposelibrary"
+    applicationId = "io.github.pawgli.androidapptemplate"
     versionCode = 1
     versionName = "1.0"
 

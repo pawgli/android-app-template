@@ -1,4 +1,4 @@
-package io.github.pawgli.daggercomposelibrary
+package io.github.pawgli.androidapptemplate
 
 import io.kotest.matchers.shouldNotBe
 import org.junit.jupiter.api.Test
