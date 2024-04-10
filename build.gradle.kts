@@ -1,9 +1,18 @@
 import io.gitlab.arturbosch.detekt.Detekt
 
 plugins {
-  alias(libs.plugins.android.app) apply false
-  alias(libs.plugins.kotlin.android) apply false
-  alias(libs.plugins.detekt)
+  with(libs.plugins) {
+    alias(android.app) apply false
+    alias(kotlin.android) apply false
+    alias(detekt)
+
+    // Convention plugins
+    alias(convention.android.app) apply false
+    alias(convention.android.app.compose) apply false
+    alias(convention.android.library) apply false
+    alias(convention.android.library.compose) apply false
+    alias(convention.jvm.library) apply false
+  }
 }
 
 dependencies {

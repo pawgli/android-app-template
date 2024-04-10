@@ -19,4 +19,3 @@ internal fun Project.disableUnnecessaryAndroidTests(
     it.androidTest.enable = it.androidTest.enable && projectDir.resolve("src/androidTest").exists()
   }
 }
-
