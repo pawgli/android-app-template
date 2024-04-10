@@ -32,3 +32,10 @@ testSuite = ["junit-jupiter", "kotest"]
 android-app = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
+
+# Convention plugins
+convention-android-app = { id = "AndroidAppConventionPlugin", version = "unspecified" }
+convention-android-app-compose = { id = "AndroidAppComposeConventionPlugin", version = "unspecified" }
+convention-android-library = { id = "AndroidLibraryConventionPlugin", version = "unspecified" }
+convention-android-library-compose = { id = "AndroidLibraryComposeConventionPlugin", version = "unspecified" }
+convention-jvm-library = { id = "JavaLibraryConventionPlugin", version = "unspecified" }
