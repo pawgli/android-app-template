@@ -4,7 +4,7 @@
 java = "17"
 androidGradlePlugin = "8.3.2"
 composeCompiler = "1.5.11"
-kotlin = "1.9.23"
+kotlin = "1.9.24"
 detekt = "1.23.6"
 
 [libraries]
