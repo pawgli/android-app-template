@@ -4,6 +4,8 @@ plugins {
   with(libs.plugins) {
     alias(android.app) apply false
     alias(kotlin.android) apply false
+    alias(compose) apply false
+    alias(compose.compiler) apply false
     alias(detekt)
 
     // Convention plugins
