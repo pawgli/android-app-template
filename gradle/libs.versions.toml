@@ -2,7 +2,7 @@
 
 # Plugins
 java = "17"
-androidGradlePlugin = "8.4.1"
+androidGradlePlugin = "8.5.0"
 kotlin = "2.0.0"
 detekt = "1.23.6"
 
