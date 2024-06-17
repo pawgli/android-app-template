@@ -2,11 +2,15 @@
 
 This project is a template for an Android application, set up with all the basic convention plugins and a version catalog. It uses Kotlin as the main programming language and Gradle for build automation. The project is also set up with JUnit Jupiter and Kotest for testing, and Detekt for code quality checks.
 
+## 🚀 Usage
+
+To create a new project using this template, click on a `Use this project` button.
+
 ## 🛠️ Technologies Used
 
-- **Android Compose**: The project uses Jetpack Compose, a modern toolkit for building native Android UI.
-- **JUnit Jupiter and Kotest**: Used for testing.
-- **Detekt**: Used for code quality checks.
+- **Android Compose**: The project uses [Jetpack Compose](https://developer.android.com/jetpack/compose), a modern toolkit for building native Android UI.
+- **JUnit Jupiter and Kotest**: Used for testing. You can find more information in the [JUnit Jupiter](https://junit.org/junit5/docs/current/user-guide/) and [Kotest](https://kotest.io/docs/framework/framework.html) documentation.
+- **Detekt**: Used for code quality checks. Check out the [Detekt](https://detekt.github.io/detekt/) documentation for more details.
 
 ## 📏 Convention Plugins
 
@@ -49,7 +53,3 @@ plugins {
   alias(libs.plugins.convention.jvm.library)
 }
 ```
-
-## 🚀 Usage
-
-To create a new project using this template, click on a `Use this project` button.
