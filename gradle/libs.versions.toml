@@ -15,7 +15,7 @@ compose-uiTooling = { module = "androidx.compose.ui:ui-tooling" }
 compose-uiPreview = { module = "androidx.compose.ui:ui-tooling-preview" }
 compose-material3 = { module = "androidx.compose.material3:material3" }
 
-junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version = "5.10.2" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version = "5.10.3" }
 kotest = { module = "io.kotest:kotest-assertions-core", version = "5.9.1" }
 
 detekt-formatting = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "detekt" }
