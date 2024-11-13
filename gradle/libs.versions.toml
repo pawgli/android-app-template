@@ -9,7 +9,7 @@ detekt = "1.23.6"
 [libraries]
 androidx-activityCompose = { module = "androidx.activity:activity-compose", version = "1.9.1" }
 
-compose-bom = { module = "androidx.compose:compose-bom", version = "2024.06.00" }
+compose-bom = { module = "androidx.compose:compose-bom", version = "2024.11.00" }
 compose-ui = { module = "androidx.compose.ui:ui" }
 compose-uiTooling = { module = "androidx.compose.ui:ui-tooling" }
 compose-uiPreview = { module = "androidx.compose.ui:ui-tooling-preview" }
