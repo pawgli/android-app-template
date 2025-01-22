@@ -2,20 +2,20 @@
 
 # Plugins
 java = "21"
-androidGradlePlugin = "8.5.1"
-kotlin = "2.0.10"
-detekt = "1.23.6"
+androidGradlePlugin = "8.7.3"
+kotlin = "2.0.21"
+detekt = "1.23.7"
 
 [libraries]
-androidx-activityCompose = { module = "androidx.activity:activity-compose", version = "1.9.1" }
+androidx-activityCompose = { module = "androidx.activity:activity-compose", version = "1.10.0" }
 
-compose-bom = { module = "androidx.compose:compose-bom", version = "2024.06.00" }
+compose-bom = { module = "androidx.compose:compose-bom", version = "2025.01.00" }
 compose-ui = { module = "androidx.compose.ui:ui" }
 compose-uiTooling = { module = "androidx.compose.ui:ui-tooling" }
 compose-uiPreview = { module = "androidx.compose.ui:ui-tooling-preview" }
 compose-material3 = { module = "androidx.compose.material3:material3" }
 
-junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version = "5.10.3" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version = "5.11.3" }
 kotest = { module = "io.kotest:kotest-assertions-core", version = "5.9.1" }
 
 detekt-formatting = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "detekt" }
@@ -31,12 +31,12 @@ testSuite = ["junit-jupiter", "kotest"]
 android-app = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-compose = { id = "org.jetbrains.compose", version = "1.6.11" }
+compose = { id = "org.jetbrains.compose", version = "1.7.3" }
 detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
 
 # Convention plugins
-convention-android-app = { id = "AndroidAppConventionPlugin", version = "unspecified" }
-convention-android-app-compose = { id = "AndroidAppComposeConventionPlugin", version = "unspecified" }
-convention-android-library = { id = "AndroidLibraryConventionPlugin", version = "unspecified" }
-convention-android-library-compose = { id = "AndroidLibraryComposeConventionPlugin", version = "unspecified" }
-convention-jvm-library = { id = "JavaLibraryConventionPlugin", version = "unspecified" }
+convention-android-app = { id = "AndroidAppConventionPlugin" }
+convention-android-app-compose = { id = "AndroidAppComposeConventionPlugin" }
+convention-android-library = { id = "AndroidLibraryConventionPlugin" }
+convention-android-library-compose = { id = "AndroidLibraryComposeConventionPlugin" }
+convention-jvm-library = { id = "JavaLibraryConventionPlugin" }
