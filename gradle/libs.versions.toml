@@ -35,8 +35,8 @@ compose = { id = "org.jetbrains.compose", version = "1.6.11" }
 detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
 
 # Convention plugins
-convention-android-app = { id = "AndroidAppConventionPlugin", version = "unspecified" }
-convention-android-app-compose = { id = "AndroidAppComposeConventionPlugin", version = "unspecified" }
-convention-android-library = { id = "AndroidLibraryConventionPlugin", version = "unspecified" }
-convention-android-library-compose = { id = "AndroidLibraryComposeConventionPlugin", version = "unspecified" }
-convention-jvm-library = { id = "JavaLibraryConventionPlugin", version = "unspecified" }
+convention-android-app = { id = "AndroidAppConventionPlugin" }
+convention-android-app-compose = { id = "AndroidAppComposeConventionPlugin" }
+convention-android-library = { id = "AndroidLibraryConventionPlugin" }
+convention-android-library-compose = { id = "AndroidLibraryComposeConventionPlugin" }
+convention-jvm-library = { id = "JavaLibraryConventionPlugin" }
