@@ -7,6 +7,7 @@ plugins {
     alias(compose) apply false
     alias(compose.compiler) apply false
     alias(detekt)
+    alias(basepackage)
 
     // Convention plugins
     alias(convention.android.app) apply false
@@ -15,6 +16,11 @@ plugins {
     alias(convention.android.library.compose) apply false
     alias(convention.jvm.library) apply false
   }
+}
+
+basePackagePlugin {
+  basePackage = "io.github.pawgli"
+  newPackage = "your.new.package"
 }
 
 dependencies {
