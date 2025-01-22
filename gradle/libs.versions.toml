@@ -33,6 +33,7 @@ kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 compose = { id = "org.jetbrains.compose", version = "1.7.3" }
 detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
+basepackage = { id = "io.github.pawgli.basepackage", version = "0.1.5" }
 
 # Convention plugins
 convention-android-app = { id = "AndroidAppConventionPlugin" }
